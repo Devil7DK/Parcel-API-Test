@@ -1,5 +1,5 @@
-const { default: Parcel } = require('@parcel/core');
-const { join } = require('path');
+import Parcel from '@parcel/core'
+import { join } from 'path';
 
 const bundler = new Parcel({
     defaultConfig: "@parcel/config-default",
