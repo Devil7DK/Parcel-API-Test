@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "node server.js",
-    "build": "parcel build index.html"
+    "build": "parcel build --target app"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,10 @@
   "devDependencies": {
     "@parcel/config-default": "^2.0.0",
     "parcel": "^2.0.0"
+  },
+  "targets": {
+    "app": {
+      "source": "./index.html"
+    }
   }
 }
