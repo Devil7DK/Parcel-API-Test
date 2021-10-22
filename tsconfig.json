@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "jsx": "react",
+        "paths": {
+            "@common/*": [
+                "./common/*"
+            ]
+        }
+    },
+    "include": [
+        "component",
+        "src",
+        "server"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
