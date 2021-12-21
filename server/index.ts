@@ -1,9 +1,8 @@
-import Parcel from '@parcel/core'
-import { join } from 'path';
+import Parcel from "@parcel/core";
 
 const bundler = new Parcel({
-    defaultConfig: "@parcel/config-default",
-    entries: [join(process.cwd(), 'src', 'index.html')]
+  defaultConfig: "@parcel/config-default",
+  targets: ["app"],
 });
 
 bundler.run().then(console.log).catch(console.error);
